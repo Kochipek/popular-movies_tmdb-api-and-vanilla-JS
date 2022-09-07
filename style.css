@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+  ::-webkit-scrollbar-track {
+  background: #cccccc; 
+}
+  ::-webkit-scrollbar-thumb {
+  background: #888; 
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  
+  background: #555; 
+} 
+body {
+    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  flex-wrap: wrap;
+  background-color: #393d50;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background: #0000003a;
+  display: flex;
+  align-items: center;
+}
+button {
+  align-items: center;
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  color: #bebbbb;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 30px;
+  justify-content: center;
+  padding: 13px;
+  text-decoration: none;
+  width: auto;
+  cursor: pointer;
+}
+
+header h1 {
+  margin: 0 20px;
+  color: rgb(224, 223, 223);
+}
+header a {
+  text-decoration: none;
+}
+header form {
+  display: flex;
+  align-items: center;
+}
+.search {
+    color: beige;
+  background-color: transparent;
+  border: 1px solid #393d50;
+  border-radius: 50px;
+  width: 230px;
+  height: 50px;
+  outline: none;
+  padding-left: 15px;
+}
+
+.search:focus {
+  outline: 0;
+  background-color: #1c1e29;
+}
+
+form {
+  margin-left: auto;
+  padding: 13px;
+}
+
+.movie {
+  width: 300px;
+  margin: 1rem;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.425) 30px 30px 30px -10px;
+  background-color: #1c1e29;
+  position: relative;
+}
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  letter-spacing: 0.5px;
+}
+.movie-info span {
+  color: rgb(192, 155, 6);
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 3px;
+  background-color: #2b2e3d;
+  padding: 0.5rem 1rem 0.5rem;
+}
+
+.movie-info h3 {
+  color: #bebbbb;
+  font-size: 37px;
+  margin-top: 0;
+}
+
+.overview {
+  color: beige;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: #2b2e3d;
+  padding: 1.5rem;
+  max-height: 100%;
+  transition: 0.2s ease;
+  overflow:auto;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.movie:hover .overview {
+  opacity: 1;
+  height: 50%;
+}
