@@ -6,19 +6,18 @@
 ::-webkit-scrollbar {
   width: 10px;
 }
-  ::-webkit-scrollbar-track {
-  background: #cccccc; 
+::-webkit-scrollbar-track {
+  background: #cccccc;
 }
-  ::-webkit-scrollbar-thumb {
-  background: #888; 
-    border-radius:10px;
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  
-  background: #555; 
-} 
+  background: #555;
+}
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -70,7 +69,7 @@ header form {
   align-items: center;
 }
 .search {
-    color: beige;
+  color: beige;
   background-color: transparent;
   border: 1px solid #393d50;
   border-radius: 50px;
@@ -135,7 +134,7 @@ form {
   padding: 1.5rem;
   max-height: 100%;
   transition: 0.2s ease;
-  overflow:auto;
+  overflow: auto;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -143,3 +142,4 @@ form {
   opacity: 1;
   height: 50%;
 }
+
