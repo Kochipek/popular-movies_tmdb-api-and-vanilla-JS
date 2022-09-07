@@ -40,7 +40,7 @@ function showMovies(data) {
             </div>
         
         `;
-    main.appendChild(movieElement);
+     main.appendChild(movieElement);
   });
 }
 movies.fetchMovies();
