@@ -1,6 +1,5 @@
 # 🟡 Popular movies using vanilla JS and fetch API
 <br>
-popular-movies-tmdb-api-and-vanilla-js.vercel.app
 
 First project using fetch API
 <hr>
